@@ -67,12 +67,8 @@ Start your react app by the following command
 ```
 npm start
 ```
-or
-```
-yarn start
-```
 #### If you're having trouble try restarting Visual studio code or clone the git repository and replace the files with your project files.
 
-Now restart VScode and start your react app agian.
+#### Now restart VScode and start your react app agian.
 
-Happy coding :)
+#### Happy coding :)
