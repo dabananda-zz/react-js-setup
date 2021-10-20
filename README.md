@@ -79,6 +79,4 @@ npm start
 
 #### Now restart VScode and start your react app agian.
 
-#### Main post link: https://dev.to/chgldev/getting-prettier-eslint-and-vscode-to-work-together-3678
-
 #### Happy coding :)
