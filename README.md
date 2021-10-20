@@ -25,18 +25,23 @@ Then open `.eslintrc` file and paste the following settings:
 ```
 {
   "parserOptions": {
-  "ecmaVersion": 12,
-  "sourceType": "module",
-  "ecmaFeatures": {
-    "jsx": true
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     }
   },
   "extends": ["plugin:prettier/recommended"],
-  
+
   "plugins": ["prettier"],
-  
+
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }
 ```
@@ -49,10 +54,13 @@ touch .prettierrc
 Then open `.prettierrc` file and paste the following settings:
 ```
 {
+  "printWidth": 80,
+  "tabWidth": 2,
   "semi": true,
   "singleQuote": true,
-  "tabWidth": 2,
-  "useTabs": false
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false
 }
 ```
 
