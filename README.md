@@ -25,18 +25,23 @@ Then open `.eslintrc` file and paste the following settings:
 ```
 {
   "parserOptions": {
-  "ecmaVersion": 12,
-  "sourceType": "module",
-  "ecmaFeatures": {
-    "jsx": true
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     }
   },
   "extends": ["plugin:prettier/recommended"],
-  
+
   "plugins": ["prettier"],
-  
+
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   }
 }
 ```
