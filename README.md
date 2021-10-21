@@ -24,6 +24,7 @@ touch .eslintrc
 Then open `.eslintrc` file and paste the following settings:
 ```
 {
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 12,
     "sourceType": "module",
@@ -32,9 +33,7 @@ Then open `.eslintrc` file and paste the following settings:
     }
   },
   "extends": ["plugin:prettier/recommended"],
-
   "plugins": ["prettier"],
-
   "rules": {
     "prettier/prettier": [
       "error",
@@ -71,7 +70,13 @@ Look for `formatOnSave` and check the checkbox, or add this line to `settings.js
 ```
 
 ## Step 06:
-Start your react app by the following command
+Run this command:
+```
+npm install @babel/eslint-parser --save-dev
+```
+
+## Step 07:
+Now everything is ready. Start your react app by the following command
 ```
 npm start
 ```
